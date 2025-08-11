@@ -1,1 +1,2 @@
-# Desarrollo_web_en_HTML5_CSS3_y_Javascript_-nivel_avanzado-
+Curso: Desarrollo web en HTML 5 CSS3 y Javascript (nivel avanzado)
+Alumna: Greta Camila Ariza Ciotta

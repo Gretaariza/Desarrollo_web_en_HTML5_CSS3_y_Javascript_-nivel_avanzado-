@@ -155,7 +155,7 @@ line.cod{
 
 
 header{
-background: url(../informacion\ -para\ el\ sitio/assets/imagenes/fondo.jpg) 50% 0 fixed ;
+background: url(../imagenes/fondo.jpg) 50% 0 fixed ;
 background-size: cover;
 height: 100vh;
 display: flex;
@@ -165,13 +165,13 @@ justify-content: center;
 
 }
 #header-2{
-    background-image: url(../informacion\ -para\ el\ sitio/assets/imagenes/historia-programacion.jpg);
+    background-image: url(../imagenes/historia-programacion.jpg);
 
     position: relative;
     height: 70vh;
 }
 #header-3{
-    background-image: url(../informacion\ -para\ el\ sitio/assets/imagenes/img2.jpg);
+    background-image: url(../imagenes/img2.jpg);
 
     position: relative;
     height: 70vh;
