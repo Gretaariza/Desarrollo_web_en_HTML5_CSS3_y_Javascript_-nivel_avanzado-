@@ -41,3 +41,67 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    nav svg {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+    .item-link {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    header {
+        height: 60vh;
+        background-position: center;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .card-hist {
+        flex-direction: column;
+        padding: 40px 20px;
+    gap: 40px;
+    }
+    .card-hist > img {
+        width: 100%;
+    }
+    .card-text-section {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .container {
+        width: 90%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 40px;
+    }
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+    }
+    .logo {
+        height: 60px;
+    }
+}
