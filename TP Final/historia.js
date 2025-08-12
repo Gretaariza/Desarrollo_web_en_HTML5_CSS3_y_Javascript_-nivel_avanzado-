@@ -1,5 +1,3 @@
-
-/* video */ 
 let video=document.querySelector('video');
 let playBoton = document.getElementById("play");
 let pauseBoton= document.getElementById("pause");
@@ -7,32 +5,25 @@ const distanciaHis1=window.innerHeight*0.35+document.querySelector("#cardHist1 "
 const navChange=()=>{
     if(window.innerHeight*0.1 < window.scrollY  ){
         document.querySelector("nav").classList.add("fondoNav")
-        
-    }else{
+    } else{
     document.querySelector("nav").classList.remove("fondoNav")
-        
-       
     }
-  
     if(window.innerHeight*0.1< window.scrollY && distanciaHis1 >window.scrollY ){
         document.querySelector("#cardHist1 >img").style="animation: aparecer1 1.5s ease-out forwards;";
         document.querySelector("#cardHist1 >div").style="animation: opacity1 2s ease-out forwards";
         return; 
-               
+        
     }
-
     if(distanciaHis1 < window.scrollY && distanciaHis1 +document.querySelector("#cardHist2 ").offsetHeight> window.scrollY){
         document.querySelector("#cardHist2 >img").style="animation: aparecer2 1.5s ease-out forwards;";
         document.querySelector("#cardHist2 >div").style="animation: opacity2 2s ease-out forwards";
         return; 
     }
-
     if(distanciaHis1 +document.querySelector("#cardHist2 ").offsetHeight< window.scrollY){
         document.querySelector("#cardHist3 >img").style="animation: aparecer1 1.5s ease-out forwards;";
         document.querySelector("#cardHist3 >div").style="animation: opacity1 2s ease-out forwards";
         return; 
     }
-  
 } 
 
 let transformarTiempoActual=(tiempo)=>{
@@ -41,34 +32,28 @@ let transformarTiempoActual=(tiempo)=>{
             return `00:0${tiempo.toFixed(0)}`
         }
         return `00:${tiempo.toFixed(0)}`
-        //metodo toFixed(cant. decimales)
+
     }else{
         console.log(tiempo/60 )
-        let minutos=parseInt(tiempo/60) //-> cantidad de minutos, solo tomo el valor entero
+        let minutos=parseInt(tiempo/60)
         let segundos= (tiempo/60 - minutos)*60
         if(segundos<10){
             return `${minutos}:0${segundos.toFixed(0)}`
         }
         return `${minutos}:${segundos.toFixed(0)}`
     }
-    //
 }
 let timeProgression;
 
 setTimeout(()=>{
 
     document.getElementById('showTime').innerHTML=` Duracion video  04:41`},100);
-
-
-
-playBoton.addEventListener('click',()=>{
-    video.play()
-    timeProgression=setInterval(()=>{
-
-   
-
-    document.getElementById('showTime').innerHTML=`${transformarTiempoActual(video.currentTime)}`
-},1000)
+    playBoton.addEventListener('click',()=>{
+        video.play()
+        timeProgression=setInterval(()=>{
+            document.getElementById('showTime').innerHTML=`${transformarTiempoActual(video.currentTime)}`
+        },
+        1000)
 });
 
 pauseBoton.addEventListener('click',()=>{

@@ -1,0 +1,43 @@
+.contenedorVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 80px;
+}
+
+.barra{
+    background-color:var(--colorDark);
+    border-radius: 10px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonera{
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    padding: 5px;
+    background-color: var(--colorDark);
+    width: 70%;
+}
+
+#play,#pause{
+    width: 80px;
+}
+
+.botonesVideo:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
+
+#showTime{
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

@@ -1,0 +1,74 @@
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cajas{
+    display: flex;
+    flex-direction: row;
+    transition: opacity 1s;
+    gap:20px;
+    transform:scale(1);
+    transition:gap 3s ease-out,transform 3s ease;
+}
+.caja{
+    width: 200px;
+    height: 350px;
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#seccion-superior>#imagen1{
+    transform: rotate(8deg);
+}
+#seccion-superior>#imagen2{
+    transform: rotate(-10deg);
+}
+#seccion-inferior{
+    height: 200px;
+}
+#seccion-inferior>img{
+    transform: rotate(93deg);
+}
+.cajaHover:hover{
+    background-color: #1d1d1d;
+    
+}
+.cajaHover:hover>p{
+    color: var(--colorLight);
+}
+#seccion-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+#imagen1,#imagen2,#imagen3{
+    width: 200px;
+    height: 350px;
+}
+#imagen1{
+    align-self: flex-start;
+}
+#imagen2{
+    align-self: flex-end;
+}
+
+.reinicio{
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--colorDark);
+    color: var(--colorLight);
+    text-transform: uppercase;
+    font-weight: 300;
+}
